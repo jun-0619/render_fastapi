@@ -1,12 +1,10 @@
 from typing import Optional
 
 from fastapi import FastAPI
-from fastapi import APIRouter
 
 import random  # randomライブラリを追加
 
 app = FastAPI()
-router = APIRouter()
 
 
 @app.get("/")
