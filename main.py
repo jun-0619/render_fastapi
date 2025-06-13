@@ -2,12 +2,14 @@ from typing import Optional
 
 from fastapi import FastAPI
 
+import random  # randomライブラリを追加
+
 app = FastAPI()
 
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World!"}
+    return {"message": "Hello World"}
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Optional[str] = None):
