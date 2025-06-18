@@ -36,7 +36,7 @@ def omikuji():
 
 @app.post("/present")
 async def give_present(present):
-    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しはキャンディーです。"}  # f文字列というPythonの機能を使っている
+    return {"response": f"サーバです。最近いきなり暑くなりすぎて、CPU温度が爆上がりです。PC掃除してください。"}  # f文字列というPythonの機能を使っている
 
 
 @app.get("/index")
