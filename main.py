@@ -44,10 +44,13 @@ def index():
     html_content = """
     <html>
         <head>
-            <title>Some HTML in here</title>
+            <title>a little HTML in here</title>
         </head>
         <body>
-            <h1>Look ma! HTML!</h1>
+            <h1>HTML is here!</h1>
+            <div>
+            なにかしらが書いてある
+            </div>
         </body>
     </html>
     """
