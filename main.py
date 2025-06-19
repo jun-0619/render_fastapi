@@ -44,7 +44,7 @@ def index():
     html_content = """
     <html>
         <head>
-            <title>a little HTML in here</title>
+            <title>今週の課題サイト</title>
         </head>
         <body>
             <h1>日記  6/19(金)</h1>
