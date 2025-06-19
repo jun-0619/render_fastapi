@@ -42,54 +42,18 @@ async def give_present(present):
 @app.get("/index")
 def index():
     html_content = """
-    <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>シンプルサイト</title>
-  <style>
-    body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
-    header { background: #3498db; color: white; padding: 1em; text-align: center; }
-    nav { background: #eee; padding: 0.5em; text-align: center; }
-    nav a { margin: 0 10px; color: #333; text-decoration: none; }
-    main { padding: 1em; max-width: 800px; margin: auto; background: white; }
-    section { margin-bottom: 1.5em; }
-    footer { text-align: center; padding: 1em; font-size: 0.9em; background: #ddd; }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>サンプルサイト</h1>
-    <p>シンプルなWebページテンプレート</p>
-  </header>
-
-  <nav>
-    <a href="#">ホーム</a>
-    <a href="#">サービス</a>
-    <a href="#">会社情報</a>
-    <a href="#">連絡先</a>
-  </nav>
-
-  <main>
-    <section>
-      <h2>ようこそ！</h2>
-      <p>これはHTMLとCSSだけで作られた簡単なテンプレートです。</p>
-    </section>
-    <section>
-      <h2>特徴</h2>
-      <ul>
-        <li>シンプル構成</li>
-        <li>すぐに使える</li>
-        <li>カスタマイズ自由</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 シンプルサイト
-  </footer>
-
-</body>
-</html>
+    <html>
+        <head>
+            <title>a little HTML in here</title>
+        </head>
+        <body>
+            <h1>日記  6/19(金)</h1>
+            <p>
+            今日は誕生日でした。でも特に普段と変わらずという感じの一日でした。<br>
+            また、今日は夏季インターンの面接もありました。初めてのインターン面接だったのでとても緊張しましたが、一応きちんとした受け答えはできたつもりです。<br>
+            でも面接官の雰囲気的に確実に落ちた気がします。とてもつらい。
+            </p>
+        </body>
+    </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
